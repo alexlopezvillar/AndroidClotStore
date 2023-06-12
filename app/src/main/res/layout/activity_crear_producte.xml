@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Administrador.CrearProducte">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="CREAR PRODUCTE"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btBack" />
+
+        <TextView
+            android:id="@+id/tview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Nom"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tvImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Imatge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tview2"
+            app:layout_constraintTop_toBottomOf="@+id/tview2" />
+
+        <ImageButton
+            android:id="@+id/btImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:elevation="1dp"
+            app:layout_constraintStart_toStartOf="@+id/tvImg"
+            app:layout_constraintTop_toBottomOf="@+id/tvImg"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/imgbuida"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvImg" />
+
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tview1"
+            app:layout_constraintTop_toBottomOf="@+id/tview1" />
+
+        <TextView
+            android:id="@+id/tview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="Preu final"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textQtt"
+            app:layout_constraintTop_toBottomOf="@+id/textQtt" />
+
+        <TextView
+            android:id="@+id/euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="€"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvImg"
+            app:layout_constraintStart_toEndOf="@+id/etPreu"
+            app:layout_constraintTop_toTopOf="@+id/etPreu" />
+
+        <EditText
+            android:id="@+id/etPreu"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/etQuant"
+            app:layout_constraintTop_toBottomOf="@+id/etQuant" />
+
+        <TextView
+            android:id="@+id/tview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Marca"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/etNom"
+            app:layout_constraintTop_toBottomOf="@+id/etNom" />
+
+        <Spinner
+
+            android:id="@+id/spnMarca"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:forceDarkAllowed="false"
+            app:layout_constraintStart_toEndOf="@+id/tview3"
+            app:layout_constraintTop_toBottomOf="@+id/etNom" />
+
+        <TextView
+            android:id="@+id/tview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:text="Categoría"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textTalla"
+            app:layout_constraintTop_toBottomOf="@+id/textTalla" />
+
+        <Spinner
+            android:id="@+id/spnCat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:forceDarkAllowed="false"
+            app:layout_constraintStart_toStartOf="@+id/spTalla"
+            app:layout_constraintTop_toBottomOf="@+id/tview4" />
+
+        <TextView
+            android:id="@+id/tview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Prenda"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tview3"
+            app:layout_constraintTop_toBottomOf="@id/tview3" />
+
+        <Spinner
+            android:id="@+id/spnPrenda"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:forceDarkAllowed="false"
+            app:layout_constraintStart_toStartOf="@+id/spnMarca"
+            app:layout_constraintTop_toBottomOf="@+id/spnMarca" />
+
+        <TextView
+            android:id="@+id/tview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Estil"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tview5"
+            app:layout_constraintTop_toBottomOf="@id/tview5" />
+
+        <Spinner
+            android:id="@+id/spnEstil"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:forceDarkAllowed="false"
+            app:layout_constraintStart_toStartOf="@+id/spnPrenda"
+            app:layout_constraintTop_toBottomOf="@+id/spnPrenda" />
+
+        <TextView
+            android:id="@+id/tview7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Temporada"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="@+id/tview4"
+            app:layout_constraintTop_toBottomOf="@+id/tview4" />
+
+        <Spinner
+            android:id="@+id/spnTempo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:forceDarkAllowed="false"
+            app:layout_constraintStart_toStartOf="@+id/spnCat"
+            app:layout_constraintTop_toBottomOf="@+id/spnCat" />
+
+        <TextView
+            android:id="@+id/textQtt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="Existències"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tview7"
+            app:layout_constraintTop_toBottomOf="@+id/tview7" />
+
+        <EditText
+            android:id="@+id/etQuant"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/spnTempo"
+            app:layout_constraintTop_toBottomOf="@+id/spnTempo" />
+
+        <TextView
+            android:id="@+id/textTalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Talla:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tview6"
+            app:layout_constraintTop_toBottomOf="@+id/tview6" />
+
+        <Spinner
+            android:id="@+id/spTalla"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@+id/spnEstil"
+            app:layout_constraintTop_toBottomOf="@+id/spnEstil" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btCrearProducte"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border10"
+            android:text="CREAR producte"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btCrearProducte" />
+
+        <ImageButton
+            android:id="@+id/btBack"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

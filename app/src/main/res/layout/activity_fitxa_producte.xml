@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FitxaProducte.FitxaProducte">
+
+    <ImageButton
+        android:id="@+id/btBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imatgeProducte"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imatgeProducte"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvMarca"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvNomProducte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imatgeProducte"
+        app:layout_constraintWidth_percent=".50"
+        tools:text="Marca" />
+
+    <TextView
+        android:id="@+id/tvNomProducte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="72dp"
+        android:textColor="@color/purple_500"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imatgeProducte"
+        app:layout_constraintWidth_percent=".65"
+        tools:text="Nom del producte" />
+
+    <TextView
+        android:id="@+id/tvTipusPrenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomProducte"
+        app:layout_constraintWidth_percent=".65"
+        tools:text="Tipus de prenda" />
+
+    <TextView
+        android:id="@+id/tvCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipusPrenda"
+        app:layout_constraintWidth_percent=".65"
+        tools:text="Categoria del producte" />
+
+    <TextView
+        android:id="@+id/tvEstil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoria"
+        app:layout_constraintWidth_percent=".65"
+        tools:text="Estil del producte" />
+
+    <TextView
+        android:id="@+id/tvTemporada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEstil"
+        app:layout_constraintWidth_percent=".65"
+        tools:text="Temporada del producte" />
+
+    <TextView
+        android:id="@+id/preuProducte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textTalla"
+        app:layout_constraintTop_toBottomOf="@+id/spTalla"
+        app:layout_constraintWidth_percent=".3"
+        tools:text="200 €" />
+
+    <TextView
+        android:id="@+id/textQtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantitat:"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/spQuantitat"
+        app:layout_constraintStart_toStartOf="@+id/tvTemporada"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemporada" />
+
+    <Spinner
+
+        android:dropDownSelector="@color/purple_700"
+        android:id="@+id/spQuantitat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/textQtt"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemporada" />
+
+
+    <TextView
+        android:id="@+id/textTalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Talla:"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/spTalla"
+        app:layout_constraintStart_toStartOf="@+id/textQtt"
+        app:layout_constraintTop_toBottomOf="@+id/spQuantitat" />
+
+    <Spinner
+        android:id="@+id/spTalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spQuantitat"
+        app:layout_constraintStart_toStartOf="@+id/spQuantitat"
+        app:layout_constraintTop_toBottomOf="@+id/spQuantitat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/afegirCarret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/purple_200"
+        android:src="@drawable/add"
+        android:text="Afegeix"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTalla" />
+</androidx.constraintlayout.widget.ConstraintLayout>

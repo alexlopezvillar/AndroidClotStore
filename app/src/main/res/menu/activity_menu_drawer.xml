@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragmentInici"
+            android:title="Inici"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/seleccionarMarca"
+            android:title="Marques"
+            android:icon="@drawable/marca"
+           />
+        <item
+            android:id="@+id/seleccionarPrenda"
+            android:title="Tipus de prenda"
+            android:icon="@drawable/cami"/>
+        <item
+            android:id="@+id/seleccionarTempo"
+            android:title="Temporades"
+            android:icon="@drawable/temporada"/>
+        <item
+            android:id="@+id/seleccionarEStil"
+            android:title="Estils"
+            android:icon="@drawable/estilo"
+            />
+        <item
+            android:id="@+id/seleccionarCategoria"
+            android:title="Categories"
+            android:icon="@drawable/categoria"
+            />
+    </group>
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/imageCarret"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:maxWidth="140dp"
+            android:src="@drawable/cami"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nomCarret"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:textColor="@color/purple_700"
+            android:id="@+id/nomCarret"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/imageCarret"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/preuCarret"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="nom" />
+
+        <TextView
+            android:id="@+id/preuCarret"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/nomCarret"
+            android:gravity="center_vertical"
+            android:minWidth="120dp"
+            android:textSize="20dp"
+            android:textColor="@color/purple_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="10 €" />
+
+        <TextView
+            android:textColor="@color/purple_700"
+            android:id="@+id/quantitatCarret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nomCarret"
+            android:minWidth="120dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/preuCarret"
+            tools:text="Quantitat:2" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btMes"
+            android:layout_width="55dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/purple_200"
+            android:src="@drawable/mes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quantitatCarret"
+            android:layout_marginRight="4dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btMenys"
+            android:layout_width="55dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/purple_200"
+            android:src="@drawable/menys"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btMes"
+            app:layout_constraintStart_toEndOf="@+id/nomCarret"
+            app:layout_constraintTop_toBottomOf="@+id/quantitatCarret" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

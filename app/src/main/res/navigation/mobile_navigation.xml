@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragmentInici">
+
+    <fragment
+        android:id="@+id/fragmentInici"
+        android:name="com.example.clotstore.FragmentsMenu.FragmentInici"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_inici" />
+
+    <fragment
+        android:id="@+id/seleccionarMarca"
+        android:name="com.example.clotstore.FragmentsMenu.SeleccionaMarca"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_selecciona_marca" />
+
+    <fragment
+        android:id="@+id/seleccionarPrenda"
+        android:name="com.example.clotstore.FragmentsMenu.SeleccionaPrenda"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_selecciona_prenda" />
+
+    <fragment
+        android:id="@+id/seleccionarTempo"
+        android:name="com.example.clotstore.FragmentsMenu.SeleccionaTemporada"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_selecciona_temporada" />
+
+    <fragment
+        android:id="@+id/seleccionarEStil"
+        android:name="com.example.clotstore.FragmentsMenu.SeleccionaEstil"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_selecciona_estil" />
+
+    <fragment
+        android:id="@+id/seleccionarCategoria"
+        android:name="com.example.clotstore.FragmentsMenu.SeleccionaCategoria"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_selecciona_categoria" />
+
+</navigation>

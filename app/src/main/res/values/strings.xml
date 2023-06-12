@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ClotStore</string>
+    <string name="title_activity_pantalla_inici">PantallaInici</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="channel_name">Notificacions</string>
+    <string name="channel_description">Notificacions_del_canal</string>
+    <string name="channel_id">channel_id</string>
+    <string name="textLlarg">tsfsfsfsfsdfsd</string>
+    <string name="titol">ClotStore</string>
+    <string name="descripcio">Gràcies per la seva compra</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_menu">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text1_outfits">En aquest apartat et recomanarem una serie d\'outfits que s\'ajustaràn a les teves preferències i gustos.</string>
+    <string name="text2_outfits">A continuació et farem 4 preguntes, si us plau respon-les per que poguem guardar les teves preferencies i recomanar-te els outfits que més s\'ajustin a tu.</string>
+</resources>

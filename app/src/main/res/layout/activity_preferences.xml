@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Preferences.Preferences"
+    android:background="@drawable/bckg2">
+
+
+    <ImageButton
+        android:id="@+id/btBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/fc1"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Preferences"
+        android:textColor="@color/purple_500"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_marginTop="50dp"
+        android:id="@+id/fc1"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout="@layout/fragment_preferences_color" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btEnrrere"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border10"
+        android:text="Torna enrrere"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fc1"
+        android:layout_marginHorizontal="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btContinua2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border10"
+        android:text="Continua"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fc1" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

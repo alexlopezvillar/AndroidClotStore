@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistreLogin.Registre"
+    android:background="@drawable/background">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="REGISTRE"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBack" />
+
+    <TextView
+
+        android:layout_marginTop="50dp"
+        android:id="@+id/tvNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etNom"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:paddingStart="5dp"
+        android:id="@+id/etNom"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Nom usuari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNom"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvContrasenya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Contrasenya"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etContrasenya"
+        app:layout_constraintTop_toBottomOf="@+id/etNom"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:paddingStart="5dp"
+        android:id="@+id/etContrasenya"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Contrasenya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContrasenya"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/tvConfirma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Confirma la contrasenya"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etContrasenya"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenya"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:paddingStart="5dp"
+        android:id="@+id/etConfirma"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Contrasenya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfirma"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginBottom="90dp"
+        android:id="@+id/btRegistre"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn"
+        android:text="Registrar-se"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etConfirma" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/back"
+        android:id="@+id/btBack"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
